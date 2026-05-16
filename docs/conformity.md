@@ -21,11 +21,12 @@ All audited repos already use `.roles/ROLE.md`, so v0.1 preserves that as the on
 
 ## Conformity decision
 
-v0.1 defines four levels:
+v0.1 defines five levels:
 
 1. Minimal: `.roles/ROLE.md` exists.
 2. Indexed: the index links to role files.
 3. Metadata: role files include `name`, `slug`, and `tier`.
 4. Panel: role files are grouped and documented for review use.
+5. Assisted: repo-local review and authoring skills know how to use `.roles`.
 
 This allows existing public repos to conform immediately at the Minimal level while giving maintainers a clear path toward richer metadata.

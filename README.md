@@ -65,7 +65,3 @@ This role protects clean ownership boundaries.
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-## License
-
-MIT. See [LICENSE](LICENSE).

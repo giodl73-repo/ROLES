@@ -34,12 +34,13 @@ def parse_frontmatter(path: Path) -> dict[str, object]:
     return {}
 
 
-def validate(root: Path) -> list[str]:
+def validate(root: Path) -> tuple[list[str], list[str]]:
     roles_dir = root / ".roles"
     errors: list[str] = []
+    warnings: list[str] = []
 
     if not roles_dir.is_dir():
-        return [f"{root}: missing .roles directory"]
+        return [f"{root}: missing .roles directory"], warnings
 
     index = roles_dir / "ROLE.md"
     if not index.is_file():
@@ -51,18 +52,18 @@ def validate(root: Path) -> list[str]:
         if path.name.lower() != "role.md"
     )
     if not role_files:
-        errors.append(f"{root}: no role markdown files found below .roles")
+        warnings.append(f"{root}: no role markdown files found below .roles")
 
     for path in role_files:
         rel = path.relative_to(root)
         meta = parse_frontmatter(path)
         if not meta:
-            errors.append(f"{rel}: missing frontmatter")
+            warnings.append(f"{rel}: missing frontmatter")
             continue
 
         for field in ("name", "slug", "tier"):
             if not str(meta.get(field, "")).strip():
-                errors.append(f"{rel}: missing frontmatter field '{field}'")
+                warnings.append(f"{rel}: missing frontmatter field '{field}'")
 
         slug = str(meta.get("slug", "")).strip()
         if slug and not SLUG_RE.fullmatch(slug):
@@ -72,9 +73,9 @@ def validate(root: Path) -> list[str]:
         if tier:
             parent = path.parent.name
             if parent != ".roles" and tier != parent:
-                errors.append(f"{rel}: tier '{tier}' does not match folder '{parent}'")
+                warnings.append(f"{rel}: tier '{tier}' does not match folder '{parent}'")
 
-    return errors
+    return errors, warnings
 
 
 def main() -> int:
@@ -84,11 +85,13 @@ def main() -> int:
 
     any_errors = False
     for root in args.paths:
-        errors = validate(root)
+        errors, warnings = validate(root)
         if errors:
             any_errors = True
             for error in errors:
                 print(f"ERROR {error}")
+        for warning in warnings:
+            print(f"WARN {warning}")
         else:
             print(f"OK {root}")
 
