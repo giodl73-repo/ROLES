@@ -33,6 +33,10 @@ assistant-skill guidance, non-goals, and compatibility rule.
 If you link to only one thing, link to the spec:
 [`https://github.com/giodl73-repo/ROLES/blob/main/SPEC.md`](https://github.com/giodl73-repo/ROLES/blob/main/SPEC.md).
 
+If you want to adopt `.roles` in a repo today, use
+[`docs/adoption-guide.md`](docs/adoption-guide.md). It includes copyable
+templates, scenario recipes, role prompts, and validation steps.
+
 ## Why `.roles` exists
 
 `.roles` helps a repository answer:
@@ -90,6 +94,18 @@ This role protects clean ownership boundaries.
 - Interfaces remain explicit.
 - Consumers do not rely on hidden implementation details.
 ```
+
+That is enough to start. A stronger panel usually adds:
+
+- one governance role in `parliament/`;
+- one communication role in `editorial/`;
+- one user, operator, maintainer, or audience role in `stakeholders/`;
+- any repo-native tiers the work actually needs.
+
+See the [adoption guide](docs/adoption-guide.md) for ready-made starting panels
+for software libraries, research repos, creative studios, games, civic systems,
+data pipelines, infrastructure tools, documentation sites, and AI-agent
+workflows.
 
 ## Recommended shape
 
