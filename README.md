@@ -61,3 +61,11 @@ This role protects clean ownership boundaries.
 3. `ROLE.md` is the entry point. A reader should understand the panel without hunting.
 4. The spec accepts both concise and richly structured roles.
 5. Validators should report drift; they should not prescribe a single writing style.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
