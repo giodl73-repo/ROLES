@@ -8,7 +8,13 @@ system your repo already needs and make it durable.
 
 ## The ten-minute path
 
-1. Create `.roles/ROLE.md`.
+1. Scaffold a starter panel:
+
+   ```bash
+   python tools/init_roles.py /path/to/repo --template starter
+   ```
+
+   Or create `.roles/ROLE.md` by hand.
 2. Add one role that protects the repo's main promise.
 3. Add one role that represents the user, reader, operator, or maintainer.
 4. Add one role that checks communication: docs, naming, examples, onboarding.
@@ -20,6 +26,28 @@ system your repo already needs and make it durable.
    ```
 
 You can stop there. That is a useful `.roles` panel.
+
+## One-command templates
+
+`tools/init_roles.py` can create starter panels for common repo shapes:
+
+| Template | Use for |
+|---|---|
+| `starter` | any repo that wants a small general panel |
+| `software-library` | reusable packages, APIs, crates, SDKs |
+| `research` | papers, analyses, experiments, evidence repos |
+| `creative` | games, stories, design labs, studios |
+| `data-pipeline` | ETL, evidence packages, reproducible data workflows |
+| `ai-agent` | agent workflows, skills, prompt contracts, assistant repos |
+
+Example:
+
+```bash
+python tools/init_roles.py ../my-repo --template software-library
+python tools/check_roles.py ../my-repo
+```
+
+The scaffolder will not overwrite existing files unless you pass `--force`.
 
 ## Copyable starter layout
 

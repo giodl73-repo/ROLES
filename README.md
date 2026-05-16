@@ -139,6 +139,18 @@ A project can adopt the first level in minutes and improve over time.
 
 ## Tooling
 
+Scaffold a starter panel in any repo:
+
+```bash
+python tools/init_roles.py /path/to/repo --template starter
+```
+
+Available templates:
+
+```text
+starter, software-library, research, creative, data-pipeline, ai-agent
+```
+
 Validate a repo's `.roles` directory with the dependency-free checker:
 
 ```bash
@@ -153,6 +165,7 @@ obvious drift, but it does not prescribe a single writing style.
 - [`SPEC.md`](SPEC.md) defines the `.roles` convention.
 - [`schemas/`](schemas/) contains optional JSON Schemas for tooling.
 - [`tools/check_roles.py`](tools/check_roles.py) validates `.roles` directories.
+- [`tools/init_roles.py`](tools/init_roles.py) scaffolds starter panels.
 - [`examples/`](examples/) shows minimal and panel-style layouts.
 - [`docs/recommended-skills.md`](docs/recommended-skills.md) recommends
   repo-local assistant skills for review and authoring workflows.
