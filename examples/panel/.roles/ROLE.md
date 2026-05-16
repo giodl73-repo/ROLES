@@ -1,6 +1,8 @@
 # Panel Roles
 
-This example uses the recommended tier layout.
+This example uses the recommended governance layout. `parliament` holds the
+decision/governance role; other tiers can be renamed or expanded to fit the
+repo's domain.
 
 ## Parliament
 

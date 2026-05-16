@@ -61,6 +61,8 @@ This role protects clean ownership boundaries.
 3. `ROLE.md` is the entry point. A reader should understand the panel without hunting.
 4. The spec accepts both concise and richly structured roles.
 5. Validators should report drift; they should not prescribe a single writing style.
+6. `parliament` is the recommended home for governance roles, but repos may add
+   creative or domain-specific tiers when those names fit the work better.
 
 ## License
 

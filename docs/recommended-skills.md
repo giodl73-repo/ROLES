@@ -54,9 +54,15 @@ Recommended instructions:
 2. Preserve the existing tier layout unless the user asks to reorganize it.
 3. Use Markdown with frontmatter when the repo already uses frontmatter.
 4. Prefer `name`, `slug`, `tier`, and `applies_to` frontmatter fields for new role files.
-5. Include a clear disposition, key question, and verification lens.
+5. Include a clear disposition, key question, and verification lens when that
+   fits the repo. For creative repos, preserve the local voice and use headings
+   that make the role usable.
 6. Update `.roles/ROLE.md` whenever adding, removing, or renaming a role.
 7. Keep roles actionable: each role should tell a reviewer what evidence to inspect.
+
+Parliament is the recommended tier for governance roles. Do not force every role
+into parliament: creative repos may keep tiers such as `studio`, `voices`,
+`playtest`, `critique`, or other domain-specific groupings.
 
 Suggested role skeleton:
 

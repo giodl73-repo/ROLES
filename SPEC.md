@@ -36,7 +36,15 @@ The three recommended tiers are:
 | `editorial` | Writing, docs, pedagogy, naming, and public communication lenses. |
 | `stakeholders` | User, operator, maintainer, policy, and adoption lenses. |
 
-Repos may add other tiers when local names are clearer. A conforming `.roles` directory does not need to use the recommended tiers.
+Repos may add other tiers when local names are clearer. A conforming `.roles`
+directory does not need to use only the recommended tiers.
+
+`parliament` is recommended as the governance tier: roles that decide whether a
+change is safe, coherent, shippable, or aligned with the repo's public promise
+belong there. Creative repos should still have governance, but they do not need
+to flatten all creative review into parliament. They can add tiers such as
+`studio`, `voices`, `playtest`, `craft`, `critique`, or any local grouping that
+makes the panel more useful.
 
 ## Role files
 
@@ -71,6 +79,10 @@ Structured sections are intentionally flexible. Recommended headings:
 - `Lens - What to Verify`
 - `Expertise`
 - `Pulls Against` or `Tensions`
+
+These headings are recommendations, not a required voice. Creative roles may use
+more natural headings such as `Taste`, `Audience`, `Scene`, `Failure Mode`, or
+`Playtest Prompt` when those make the role easier to use.
 
 ## Conformance levels
 
