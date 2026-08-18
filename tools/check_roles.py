@@ -92,7 +92,7 @@ def main() -> int:
                 print(f"ERROR {error}")
         for warning in warnings:
             print(f"WARN {warning}")
-        else:
+        if not errors and not warnings:
             print(f"OK {root}")
 
     return 1 if any_errors else 0

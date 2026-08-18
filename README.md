@@ -160,6 +160,15 @@ python tools/check_roles.py /path/to/repo
 The checker is intentionally conservative. It catches missing entry points and
 obvious drift, but it does not prescribe a single writing style.
 
+Retained accepted/failure proof:
+
+```powershell
+pwsh -NoProfile -File tests\check-proof.ps1
+```
+
+The minimal example is accepted. The invalid fixture returns the structured
+`slug must be lowercase kebab-case` error.
+
 ## What belongs in this repo
 
 - [`SPEC.md`](SPEC.md) defines the `.roles` convention.
