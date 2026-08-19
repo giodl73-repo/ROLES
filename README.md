@@ -193,4 +193,10 @@ The minimal example is accepted. The invalid fixture returns the structured
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+ROLES uses separate licenses for software and content. Source code,
+executable scripts, tests, configuration, and ordinary software
+documentation are MIT-licensed (copyright ROLES contributors). Original
+non-software content is licensed CC BY-NC 4.0 (copyright ROLES contributors);
+commercial use of that content requires separate written permission.
+Third-party material remains under its own terms.
+See [LICENSE](./LICENSE) for the complete notice.
