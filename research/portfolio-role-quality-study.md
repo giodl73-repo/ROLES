@@ -6,6 +6,11 @@
 **Dataset:** 77 managed repositories, 1,120 committed role files  
 **Authority:** ROLES v0.1
 
+**Snapshot note:** Results describe the baseline captured before the ROLES
+self-improvement published with this paper. That intervention adds an Adopter
+Advocate and an explicit tension contract, so later TRACKER reports contain
+1,121 role files and one additional tension-ready panel.
+
 ## Abstract
 
 This study examines how 77 repositories implement the `.roles` convention.

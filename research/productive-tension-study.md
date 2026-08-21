@@ -2,6 +2,10 @@
 
 ## From a List of Perspectives to a Decision System
 
+This paper analyzes the 2026-08-21 pre-intervention baseline. ROLES then applied
+the findings to its own panel by adding pairwise tensions, review order, and an
+Adopter Advocate.
+
 ## Abstract
 
 A diverse role catalog does not automatically produce a useful review. Roles
