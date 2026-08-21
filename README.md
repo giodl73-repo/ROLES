@@ -50,6 +50,22 @@ templates, scenario recipes, role prompts, and validation steps.
 The convention is not a global role catalog. It is repo-local by design: each
 project writes the roles that match its own promises, risks, users, and style.
 
+## Doctrine and traceability
+
+ROLES defines **who reviews and which questions they ask**. It deliberately does
+not own the durable engineering rules or the mission-to-evidence process:
+
+- [PITFALL](https://github.com/giodl73-repo/PITFALL) records repository-local
+  principles, invariants, and reusable failure patterns.
+- [VTRACE](https://github.com/giodl73-repo/VTRACE) connects mission,
+  requirements, implementation, verification, validation, evidence, and review
+  decisions.
+
+A role may cite PITFALL IDs under its lens or expected evidence and may serve as
+a VTRACE review owner. It should not copy doctrine into the role file or turn a
+role into a parallel requirements system. This keeps judgment, durable
+knowledge, and traceability connected while preserving one owner for each.
+
 ## Quick start
 
 Create a `.roles` directory at the repository root:
