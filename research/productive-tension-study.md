@@ -13,9 +13,9 @@ become a panel when their obligations differ, their disagreements are named,
 and the repository explains how those disagreements affect a decision.
 
 This paper develops a practical model of productive tension from a structural
-audit of 77 repository panels. Only 25 panels in the sample have a strong
+audit of 77 repository panels. Only three panels in the sample have a strong
 explicit tension contract. Tension is the weakest scoring dimension, averaging
-6.4 of 20 available points. The strongest examples use pairwise conflict
+4.6 of 20 available points. The strongest examples use pairwise conflict
 statements, hard-stop rules, review routing, and evidence-specific questions.
 
 Productive tension is not performative argument. It is a durable record of

@@ -8,8 +8,8 @@
 
 **Snapshot note:** Results describe the baseline captured before the ROLES
 self-improvement published with this paper. That intervention adds an Adopter
-Advocate and an explicit tension contract, so later TRACKER reports contain
-1,121 role files and one additional tension-ready panel.
+Advocate and an explicit tension contract, increasing tension-ready panels from
+three to four. The subsequent SCENARIUM pilot raises the count to five.
 
 ## Abstract
 
@@ -20,7 +20,7 @@ review, and maintainable over time.
 
 Adoption is broad: 70 repositories have `.roles/ROLE.md`, and 62 have at least
 one role file. Operational completeness is much rarer. Only 10 non-empty panels
-link every role from their index, and only 25 panels have a strong explicit
+link every role from their index, and only three panels have a strong explicit
 tension contract. Fifteen repositories have no active role files. Three
 repositories contain more than 40 roles and need an active-core model rather
 than further catalog growth.
@@ -89,17 +89,17 @@ and Markdown and includes a check mode for stale outputs.
 | Repositories with `.roles/ROLE.md` | 70 |
 | Repositories with at least one role file | 62 |
 | Fully indexed non-empty panels | 10 |
-| Panels with a strong explicit tension contract | 25 |
+| Panels with a strong explicit tension contract | 3 |
 | Catalogs with more than 40 roles | 3 |
-| Average score | 52.6 / 100 |
+| Average score | 50.8 / 100 |
 
 ### Score bands
 
 | Band | Range | Repositories |
 |---|---:|---:|
 | Exemplary | 85-100 | 0 |
-| Strong | 70-84 | 17 |
-| Developing | 50-69 | 40 |
+| Strong | 70-84 | 11 |
+| Developing | 50-69 | 46 |
 | Thin | 0-49 | 20 |
 
 No repository reached the exemplary band. This is useful: the rubric leaves
@@ -127,7 +127,7 @@ can select and apply them intentionally.
 | Conformance | 12.1 / 20 | 60.5% |
 | Repository grounding | 13.1 / 20 | 65.5% |
 | Viewpoint diversity | 9.4 / 15 | 62.7% |
-| Productive tension | 6.4 / 20 | 32.0% |
+| Productive tension | 4.6 / 20 | 23.0% |
 | Actionability | 6.9 / 15 | 46.0% |
 | Maintainability | 5.8 / 10 | 58.0% |
 
@@ -155,7 +155,7 @@ role.
 
 ### 3. Productive tension is uncommon
 
-Only 25 panels reach the study's threshold for an explicit tension contract.
+Only three panels reach the study's threshold for an explicit tension contract.
 Many repositories have multiple credible reviewers but do not state where
 their obligations conflict. Without that connection, diversity remains a list
 of perspectives rather than a decision system.
