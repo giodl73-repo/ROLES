@@ -180,6 +180,10 @@ The minimal example is accepted. The invalid fixture returns the structured
   repo-local assistant skills for review and authoring workflows.
 - [`docs/conformity.md`](docs/conformity.md) records the current public-repo
   shape audit.
+- [`docs/improving-panels.md`](docs/improving-panels.md) turns recurring
+  portfolio findings into practical repair patterns.
+- [`research/`](research/) contains empirical studies of `.roles` adoption,
+  panel quality, and productive tension.
 
 ## Design principles
 
