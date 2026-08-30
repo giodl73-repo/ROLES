@@ -105,6 +105,22 @@ Repos that use automation assistants should add two local skills or equivalent c
 
 The skills should be local to each repo because the active panel, review order, and evidence requirements are repo-specific. See `docs/recommended-skills.md` for copyable skill contracts.
 
+## Doctrine and trace hooks
+
+`.roles` defines who reviews and which questions they ask. It should not become
+a parallel doctrine catalog or requirements trace.
+
+When a repo also uses PITFALL or VTRACE:
+
+- role files may cite PITFALL IDs as evidence or rationale for a review lens;
+- role files should not copy principle, invariant, or failure-pattern prose from
+  PITFALL;
+- VTRACE rows may name a role as a review owner or gate;
+- role files should not replace VTRACE's mission-to-evidence trace.
+
+This keeps review judgment, durable doctrine, and traceability connected while
+preserving a single owner for each kind of record.
+
 ## Non-goals
 
 `.roles` is not a package manager, workflow runner, or mandatory global role catalog. It is a portable repository convention. Tools may validate it, but the source of truth remains the Markdown in each repo.

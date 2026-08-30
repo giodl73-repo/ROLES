@@ -27,6 +27,10 @@ system your repo already needs and make it durable.
 
 You can stop there. That is a useful `.roles` panel.
 
+If the repo already uses PITFALL or VTRACE, keep the ownership boundary clear:
+roles may cite PITFALL IDs and may serve as VTRACE review owners, but roles
+should not copy durable doctrine or replace the mission-to-evidence trace.
+
 ## One-command templates
 
 `tools/init_roles.py` can create starter panels for common repo shapes:
@@ -309,6 +313,7 @@ Optional but useful:
 | At least one stakeholder/audience role exists |  |
 | At least one communication/docs role exists |  |
 | Role files say what evidence to inspect |  |
+| PITFALL/VTRACE references, if present, cite IDs without copying doctrine or trace records |  |
 | README links to ROLES or the local `.roles` index |  |
 | Checker passes: `python tools/check_roles.py /path/to/repo` |  |
 
