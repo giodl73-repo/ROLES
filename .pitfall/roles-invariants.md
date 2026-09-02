@@ -59,3 +59,20 @@
 **Evidence:** `research/README.md`, `research/portfolio-role-quality-study.md`, and `research/productive-tension-study.md`.
 
 **Test:** `git diff --check`.
+
+## ROLES-I-06: Template And Research Boundaries Are Machine-Readable
+
+**Status:** VERIFIED
+
+**Invariant:** ROLES keeps template-governance and portfolio-research claim
+boundaries in a machine-readable manifest that is enforced by retained proof.
+
+**Why it matters:** A convention repo can accidentally turn helpful starter
+panels into universal governance or one managed portfolio study into external
+proof.
+
+**Evidence:** `docs/pitfall-boundaries.v1.json`,
+`tests/check-pitfall-policy.ps1`, `tests/check-proof.ps1`, `SPEC.md`,
+`docs/adoption-guide.md`, `docs/improving-panels.md`, and `research/`.
+
+**Test:** `pwsh -NoProfile -File tests\check-proof.ps1`.

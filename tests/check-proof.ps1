@@ -23,4 +23,9 @@ if ($LASTEXITCODE -ne 1 -or $pythonRejected -notmatch 'slug must be lowercase ke
     throw "invalid slug did not produce the expected Python structured failure"
 }
 
-Write-Output "PASS accepted minimal panel and rejected invalid slug with both checkers"
+$policy = & pwsh -NoProfile -File (Join-Path $PSScriptRoot "check-pitfall-policy.ps1")
+if ($LASTEXITCODE -ne 0 -or $policy -notmatch 'ROLES PITFALL policy passed') {
+    throw "pitfall policy proof did not pass"
+}
+
+Write-Output "PASS accepted minimal panel, rejected invalid slug with both checkers, and covered PITFALL policy"

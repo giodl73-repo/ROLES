@@ -30,3 +30,16 @@ This repository uses `.roles` to govern the `.roles` convention itself.
 2. Adopter Advocate identifies where the convention creates avoidable adoption work.
 3. Spec Steward decides whether a change belongs in the standard or in guidance.
 4. Public Guide Editor makes the accepted decision understandable and copyable.
+
+## PITFALL gate routing
+
+Invoke the Spec Steward, Conformity Auditor, and Adopter Advocate before starter
+templates, recommended tiers, scenario recipes, public examples, or
+assistant-authored panels are treated as mandatory global governance, a
+universal role catalog, required parliament/editorial/stakeholders tiers,
+complete governance, or a replacement for repository evidence.
+
+Invoke the Spec Steward, Conformity Auditor, and Public Guide Editor before
+portfolio research is described as independent open-source proof,
+organizational behavior proof, a universal distribution claim, an uncorrelated
+role-file sample, or external ecosystem generalization.

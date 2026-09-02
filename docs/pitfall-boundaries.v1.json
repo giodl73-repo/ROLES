@@ -1,0 +1,73 @@
+{
+  "$schema": "roles.pitfall-boundaries.v1",
+  "owner": "ROLES maintainers",
+  "purpose": "Machine-readable boundaries for template governance and portfolio research claims.",
+  "authority": {
+    "required_conformance": "repository root .roles/ROLE.md exists",
+    "recommended_template": "optional starter that must be adapted to local evidence",
+    "local_panel": "source of truth for local tier names, role selection, and review order",
+    "portfolio_research": "managed-portfolio evidence for improving ROLES",
+    "external_proof": "requires independent open-source or organizational datasets"
+  },
+  "pitfall_boundaries": [
+    {
+      "entryId": "ROLES-PF-04",
+      "requiredOwners": [
+        "Spec Steward",
+        "Conformity Auditor",
+        "Adopter Advocate"
+      ],
+      "sourceLayer": "tools/init_roles.py, adoption guide, SPEC, public examples, and assistant-authored panels",
+      "maySupport": [
+        "starter panel",
+        "recommended tier",
+        "copyable role example",
+        "local evidence prompt",
+        "conformance example"
+      ],
+      "blockedClaims": [
+        "mandatory global governance",
+        "universal role catalog",
+        "required parliament/editorial/stakeholders tiers",
+        "template panel is complete governance",
+        "generic checks replace repository evidence"
+      ],
+      "requiredEvidence": [
+        "local ROLE.md",
+        "local tier names",
+        "repository evidence",
+        "adopter-owned review",
+        "checker result"
+      ]
+    },
+    {
+      "entryId": "ROLES-PF-05",
+      "requiredOwners": [
+        "Spec Steward",
+        "Conformity Auditor",
+        "Public Guide Editor"
+      ],
+      "sourceLayer": "research README, portfolio-role-quality study, productive-tension study, README claims, and future public papers",
+      "maySupport": [
+        "managed portfolio finding",
+        "convention improvement hypothesis",
+        "portfolio repair pattern",
+        "bounded empirical study"
+      ],
+      "blockedClaims": [
+        "independent open-source proof",
+        "organizational behavior proof",
+        "universal distribution claim",
+        "uncorrelated role-file sample",
+        "external ecosystem generalization"
+      ],
+      "requiredEvidence": [
+        "independent dataset",
+        "organization sampling method",
+        "correlation limitation",
+        "study date",
+        "source dataset path"
+      ]
+    }
+  ]
+}

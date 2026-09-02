@@ -44,7 +44,7 @@
 
 ## ROLES-PF-04: Template Panels Become Universal Governance
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** Starter templates or recommended tiers are treated as mandatory global governance instead of a local starting point.
 
@@ -52,13 +52,19 @@
 
 **Detection difficulty:** Templates are easy to copy and can look official even when local evidence needs different tiers or roles.
 
-**Structural solution:** Keep template language explicitly optional, preserve local tier names, and require adopters to replace generic checks with repository evidence.
+**Structural solution:** Keep template language explicitly optional, preserve
+local tier names, and require adopters to replace generic checks with
+repository evidence, with retained proof over the machine-readable boundary.
 
-**Evidence:** `SPEC.md`, `docs/adoption-guide.md`, `docs/improving-panels.md`, and `tools/init_roles.py`.
+**Evidence:** `docs/pitfall-boundaries.v1.json`, `SPEC.md`,
+`docs/adoption-guide.md`, `docs/improving-panels.md`, `tools/init_roles.py`,
+and `tests/check-pitfall-policy.ps1`.
+
+**Test:** `pwsh -NoProfile -File tests\check-proof.ps1`.
 
 ## ROLES-PF-05: Research Portfolio Becomes External Proof
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** ROLES research based on one managed portfolio is presented as proof of independent open-source or organizational role-panel behavior.
 
@@ -66,6 +72,13 @@
 
 **Detection difficulty:** The dataset is large enough to sound general even though it is still portfolio-bounded and correlated.
 
-**Structural solution:** Keep research claims scoped to the managed portfolio unless independent datasets are collected.
+**Structural solution:** Keep research claims scoped to the managed portfolio
+unless independent datasets are collected, with retained proof that public
+research docs preserve independent-ecosystem limitations.
 
-**Evidence:** `research/README.md`, `research/portfolio-role-quality-study.md`, and `research/productive-tension-study.md`.
+**Evidence:** `docs/pitfall-boundaries.v1.json`, `research/README.md`,
+`research/portfolio-role-quality-study.md`,
+`research/productive-tension-study.md`, and
+`tests/check-pitfall-policy.ps1`.
+
+**Test:** `pwsh -NoProfile -File tests\check-proof.ps1`.
